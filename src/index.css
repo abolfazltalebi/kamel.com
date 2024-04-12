@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "iran";
+  src: url("./assets/font/IRANSansXVF.ttf") format("truetype");
+}
+@layer base{
+  .icon{
+    @apply w-6 h-6 text-gray-800 transition-all hover:text-blue-600 hover:translate-y-[-5px];
+  }
+  .hoverBox{
+    @apply cursor-pointer transition-all duration-300 hover:translate-y-[-5px];
+  }
+}
+html,
+body {
+  background-color: #f5f2fb;
+  scroll-behavior: smooth;
+}
+body {
+  --sb-track-color: #e0e0e0;
+  --sb-thumb-color: #1649bf;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 8px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
