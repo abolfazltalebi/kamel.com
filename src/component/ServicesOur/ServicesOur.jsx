@@ -1,4 +1,4 @@
-import khadamat from "../../assets/Images/khadamat-label.png";
+import { motion } from "framer-motion";
 import icon1 from "../../assets/icons/Digital-marketing.svg";
 import icon2 from "../../assets/icons/wordpress.svg";
 import icon3 from "../../assets/icons/UIUX.svg";
@@ -19,15 +19,25 @@ function Section4() {
 
   return (
     <section className="p-3 md:container md:m-auto space-y-3 my-4">
-      <div className="max-w-2xl w-full m-auto">
-        <img src={khadamat} className="w-full h-auto object-cover" alt="" />
+      <div className="flex items-center justify-center">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+          خدمات موسسه تجاری کامل
+        </h2>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <motion.div
+        variants={{
+          hidden: { opacity: 0 },
+          show: { opacity: 1, transition: { staggerChildren: 0.5 } },
+        }}
+        initial="hidden"
+        animate="show"
+        className="grid md:grid-cols-3 gap-6 p-1"
+      >
         {services.map((service) => {
           return (
             <div
               key={service.id}
-              className="bg-white rounded-xl p-2 flex flex-col items-center gap-6 transition-all hover:shadow-md hover:shadow-blue-600 hover:translate-y-[-5px] cursor-pointer"
+              className="bg-white rounded-xl p-3 flex flex-col items-center gap-6 hoverBox cursor-pointer"
             >
               <div>
                 <img
@@ -48,7 +58,7 @@ function Section4() {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </section>
   );
 }

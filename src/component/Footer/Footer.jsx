@@ -1,7 +1,3 @@
-import aboutFooter from "../../assets/Images/about-footer.png";
-import fast from "../../assets/Images/fast-label.png";
-import khadamat from "../../assets/Images/khadamat-footer.png";
-import contact from "../../assets/Images/contact-footer.png";
 import lineContact from "../../assets/Images/line-footer.png";
 import team1 from "../../assets/icons/team-icon-1.svg";
 import team2 from "../../assets/icons/team-icon-2.svg";
@@ -9,10 +5,12 @@ import team3 from "../../assets/icons/team-icon-3.svg";
 function Footer() {
   return (
     <footer className=" bg-white rounded-t-3xl shadow-lg p-4 space-y-4 mt-6">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid md:grid-cols-4 gap-6 p-3">
         <div className="item-footer-1 space-y-4">
-          <div className="max-w-2xl w-full">
-            <img src={aboutFooter} alt="" />
+          <div>
+            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+              درباره موسسه کامل
+            </h2>
           </div>
           <div>
             <p className="text-[14px] text-gray-500 text-justify">
@@ -22,7 +20,7 @@ function Footer() {
               متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
               طراحان گرافیک است
             </p>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 my-3">
               <a href="">
                 <img src={team1} alt="" />
               </a>
@@ -36,8 +34,10 @@ function Footer() {
           </div>
         </div>
         <div className="item-footer-2 space-y-4">
-          <div >
-            <img src={fast} alt="" />
+          <div>
+            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+              دسترسی سریع
+            </h2>
           </div>
           <div>
             <ul className="flex flex-col gap-4">
@@ -86,7 +86,9 @@ function Footer() {
         </div>
         <div className="item-footer-3 space-y-4">
           <div>
-            <img src={khadamat} alt="" />
+            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+              خدمات ما
+            </h2>
           </div>
           <div>
             <ul className="flex flex-col gap-4">
@@ -127,7 +129,9 @@ function Footer() {
         </div>
         <div className="item-footer-4 space-y-4">
           <div>
-            <img src={contact} alt="" />
+            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+              تماس با ما
+            </h2>
           </div>
           <div className="flex flex-col gap-4">
             <p>تلفن ثابت: 0214698000</p>
@@ -138,10 +142,12 @@ function Footer() {
       </div>
       <div className="flex flex-col items-center gap-2 max-w-2xl w-full m-auto">
         <div>
-            <img src={lineContact} alt="" />
+          <img src={lineContact} alt="" />
         </div>
         <div>
-            <p className="text-gray-500 text-[14px]">تمامی حقوق مادی و معنوی این قالب متعلق به موسسه تجاری کامل است.</p>
+          <p className="text-gray-500 text-[14px]">
+            تمامی حقوق مادی و معنوی این قالب متعلق به موسسه تجاری کامل است.
+          </p>
         </div>
       </div>
     </footer>

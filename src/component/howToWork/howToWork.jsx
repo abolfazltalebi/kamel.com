@@ -1,4 +1,3 @@
-import howWork from "../../assets/Images/Home-label.png";
 import icon1 from "../../assets/icons/process_card_1.svg";
 import icon2 from "../../assets/icons/process_card_2.svg";
 import icon3 from "../../assets/icons/process_card_3.svg";
@@ -14,15 +13,17 @@ function Section5() {
 
   return (
     <section className="space-y-3  md:container md:m-auto my-4">
-      <div className="max-w-2xl w-full m-auto">
-        <img src={howWork} className="w-full h-auto object-cover" alt="" />
+      <div className="flex items-center justify-center">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+          نحوه کار موسسه تجاری کامل
+        </h2>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 p-4 gap-4">
+      <div className="grid md:grid-cols-4 p-4 gap-4">
         {steps.map((step) => {
           return (
             <div
               key={step.id}
-              className="bg-white rounded-xl p-2 flex flex-col items-center gap-2"
+              className="bg-white rounded-xl p-2 flex flex-col items-center gap-2 hoverBox"
             >
               <div>
                 <img src={step.src} alt={step.title} title={step.title} />

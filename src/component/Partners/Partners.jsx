@@ -1,4 +1,3 @@
-import hamkaranImg from "../../assets/Images/hamkaran-label.png"; // Assuming PNG format
 import poromIcon from "../../assets/icons/porom.png";
 import digitalIcon from "../../assets/icons/digital.png";
 import funnelIcon from "../../assets/icons/funnel.png";
@@ -12,17 +11,15 @@ function Section2() {
   ];
   return (
     <section className="flex flex-col items-center p-2 gap-4">
-      <div className="max-w-2xl w-full">
-        <img
-          src={hamkaranImg}
-          className="w-full h-auto object-cover"
-          alt="Hamkaran"
-        />
+      <div className="flex items-center justify-center">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+          همکاران ما
+        </h2>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-4 max-w-5xl w-full bg-white p-2 rounded-xl">
         {icons.map((icon) => (
           <div key={icon.id}>
-            <img src={icon.src} alt={'dfsdf'} />
+            <img src={icon.src} alt={"dfsdf"} />
           </div>
         ))}
       </div>

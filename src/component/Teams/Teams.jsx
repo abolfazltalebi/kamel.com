@@ -1,4 +1,3 @@
-import teamKamel from "../../assets/Images/team-kamel-com.png";
 import Abarati from "../../assets/Images/team-1.png";
 import Aahmadi from "../../assets/Images/team-2.png";
 import Mimani from "../../assets/Images/team-3.png";
@@ -25,10 +24,12 @@ function Section7() {
   ];
   return (
     <section className=" space-y-4 my-2">
-      <div className="max-w-2xl w-full m-auto">
-        <img src={teamKamel} alt="" className="w-full h-auto object-cove" />
+      <div className="flex items-center justify-center">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+          تیم تجاری موسسه کامل{" "}
+        </h2>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 md:container md:m-auto gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:container md:m-auto gap-2 p-2">
         {team.map((teams) => {
           return (
             <div
@@ -38,18 +39,18 @@ function Section7() {
               <div className="w-[50%]">
                 <img src={teams.src} className=" rounded-full" alt="" />
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center flex-wrap gap-4">
                 <h2 className="font-bold text-blue-600">{teams.title}</h2>
                 <p className="text-[14px]">{teams.position}</p>
               </div>
               <div className="flex items-center justify-center gap-6">
-                <a>
+                <a className="hoverIcon">
                   <img src={team1} alt="" />
                 </a>
-                <a>
+                <a className="hoverIcon">
                   <img src={team2} alt="" />
                 </a>
-                <a>
+                <a className="hoverIcon">
                   <img src={team3} alt="" />
                 </a>
               </div>

@@ -1,4 +1,3 @@
-import blogLabel from "../../assets/Images/blog-label.png";
 import blog1 from "../../assets/Images/post-1-4.png";
 import blog2 from "../../assets/Images/post-2-4.png";
 import blog3 from "../../assets/Images/post-3-4.png";
@@ -38,22 +37,20 @@ function Section8() {
   ];
   return (
     <section className=" p-2 space-y-2">
-      <div className="max-w-2xl w-full m-auto">
-        <img
-          src={blogLabel}
-          className="max-w-full h-auto object-cover"
-          alt={"blogCamel.com"}
-        />
+       <div className="flex items-center justify-center">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+          وبلاگ موسسه تجاری کامل
+        </h2>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 md:container md:m-auto gap-6">
+      <div className="grid md:grid-cols-4 md:container md:m-auto gap-6 p-3">
         {blog.map((blogs) => {
           return (
             <div key={blogs.id} className="bg-white rounded-xl hoverBox">
               <div>
                 <img src={blogs.src} alt="" />
               </div>
-              <div className="p-2">
-                <h2 className="font-bold">{blogs.title}</h2>
+              <div className="p-2 space-y-3">
+                <h2 className="font-bold md:text-[18px] text-2xl">{blogs.title}</h2>
                 <p className="text-[14px] text-justify">{blogs.caption}</p>
                 <div className="w-[95%] h-[2px] bg-gray-300 m-auto my-3"></div>
                 <div className="flex items-center justify-between">
