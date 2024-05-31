@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+
 import icon1 from "../../assets/icons/Digital-marketing.svg";
-import icon2 from "../../assets/icons/wordpress.svg";
-import icon3 from "../../assets/icons/UIUX.svg";
 import icon4 from "../../assets/icons/code-website.svg";
+import icon2 from "../../assets/icons/wordpress.svg";
 import icon5 from "../../assets/icons/bazar.svg";
+import icon3 from "../../assets/icons/UIUX.svg";
 import icon6 from "../../assets/icons/seo.svg";
 import Button from "../Button/Button";
 
@@ -20,7 +21,7 @@ function Section4() {
   return (
     <section className="p-3 md:container md:m-auto space-y-3 my-4">
       <div className="flex items-center justify-center">
-        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold lg:text-3xl text-center my-3">
           خدمات موسسه تجاری کامل
         </h2>
       </div>

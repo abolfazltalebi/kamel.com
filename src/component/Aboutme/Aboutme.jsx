@@ -1,10 +1,11 @@
 import aboutSection from "../../assets/Images/about.png";
 import Button from "../Button/Button";
+
 function Section3() {
   return (
     <section className=" space-y-2 my-4">
       <div className="flex items-center justify-center">
-        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold lg:text-3xl text-center my-3">
           درباره موسسه تجاری کامل
         </h2>
       </div>

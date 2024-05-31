@@ -2,13 +2,14 @@ import lineContact from "../../assets/Images/line-footer.png";
 import team1 from "../../assets/icons/team-icon-1.svg";
 import team2 from "../../assets/icons/team-icon-2.svg";
 import team3 from "../../assets/icons/team-icon-3.svg";
+
 function Footer() {
   return (
     <footer className=" bg-white rounded-t-3xl shadow-lg p-4 space-y-4 mt-6">
       <div className="grid md:grid-cols-4 gap-6 p-3">
         <div className="item-footer-1 space-y-4">
           <div>
-            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-2xl  text-center my-3">
               درباره موسسه کامل
             </h2>
           </div>
@@ -35,7 +36,7 @@ function Footer() {
         </div>
         <div className="item-footer-2 space-y-4">
           <div>
-            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-2xl  lg:text-2xl text-center my-3">
               دسترسی سریع
             </h2>
           </div>
@@ -86,7 +87,7 @@ function Footer() {
         </div>
         <div className="item-footer-3 space-y-4">
           <div>
-            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-2xl  text-center my-3">
               خدمات ما
             </h2>
           </div>
@@ -129,7 +130,7 @@ function Footer() {
         </div>
         <div className="item-footer-4 space-y-4">
           <div>
-            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+            <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-2xl  text-center my-3">
               تماس با ما
             </h2>
           </div>
@@ -145,9 +146,9 @@ function Footer() {
           <img src={lineContact} alt="" />
         </div>
         <div>
-          <p className="text-gray-500 text-[14px]">
+          <a href='www.instagram.com/abolfazltalebi.web' className="text-gray-500 text-[14px]">
             تمامی حقوق مادی و معنوی این قالب متعلق به موسسه تجاری کامل است.
-          </p>
+          </a>
         </div>
       </div>
     </footer>

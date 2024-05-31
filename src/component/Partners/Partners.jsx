@@ -1,7 +1,8 @@
-import poromIcon from "../../assets/icons/porom.png";
+import growbotsIcon from "../../assets/icons/growbots.png";
 import digitalIcon from "../../assets/icons/digital.png";
 import funnelIcon from "../../assets/icons/funnel.png";
-import growbotsIcon from "../../assets/icons/growbots.png";
+import poromIcon from "../../assets/icons/porom.png";
+
 function Section2() {
   const icons = [
     { id: 1, src: poromIcon },
@@ -12,7 +13,7 @@ function Section2() {
   return (
     <section className="flex flex-col items-center p-2 gap-4">
       <div className="flex items-center justify-center">
-        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold lg:text-3xl text-center my-3">
           همکاران ما
         </h2>
       </div>

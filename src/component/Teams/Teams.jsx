@@ -1,10 +1,11 @@
-import Abarati from "../../assets/Images/team-1.png";
-import Aahmadi from "../../assets/Images/team-2.png";
-import Mimani from "../../assets/Images/team-3.png";
-import Mmorady from "../../assets/Images/team-4.png";
 import team1 from "../../assets/icons/team-icon-1.svg";
 import team2 from "../../assets/icons/team-icon-2.svg";
 import team3 from "../../assets/icons/team-icon-3.svg";
+import Abarati from "../../assets/Images/team-1.png";
+import Aahmadi from "../../assets/Images/team-2.png";
+import Mmorady from "../../assets/Images/team-4.png";
+import Mimani from "../../assets/Images/team-3.png";
+
 function Section7() {
   const team = [
     {
@@ -25,7 +26,7 @@ function Section7() {
   return (
     <section className=" space-y-4 my-2">
       <div className="flex items-center justify-center">
-        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold lg:text-3xl text-center my-3">
           تیم تجاری موسسه کامل{" "}
         </h2>
       </div>

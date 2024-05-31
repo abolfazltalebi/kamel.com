@@ -1,9 +1,10 @@
 import backContact from "../../assets/Images/background-contact.png";
 import contactVector from "../../assets/Images/contact-vector.png";
 import Button from "../Button/Button";
+
 function Section9() {
   return (
-    <section className="relative hidden md:inline">
+    <section className="relative hidden lg:inline">
       <div>
         <img
           src={backContact}

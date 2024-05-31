@@ -14,7 +14,7 @@ function Section5() {
   return (
     <section className="space-y-3  md:container md:m-auto my-4">
       <div className="flex items-center justify-center">
-        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold text-3xl sm:text-5xl text-center my-3">
+        <h2 className="bg-gradient-to-r from-[#175CFF] via-blue-800  to-[#FFC226] inline-block text-transparent bg-clip-text font-bold lg:text-3xl sm:text-5xl text-center my-3">
           نحوه کار موسسه تجاری کامل
         </h2>
       </div>

@@ -1,5 +1,6 @@
 import section1 from "../../assets/Images/section1.png";
 import Button from "../Button/Button";
+
 function Section1() {
   return (
     <section className="container flex flex-col-reverse md:flex-row items-center gap-3 mt-5 md:mt-20 p-4 md:p-8">

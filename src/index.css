@@ -5,14 +5,14 @@
   font-family: "iran";
   src: url("./assets/font/IRANSansXVF.ttf") format("truetype");
 }
-@layer base{
-  .icon{
+@layer base {
+  .icon {
     @apply w-6 h-6 text-gray-800 transition-all hover:text-blue-600 hover:translate-y-[-5px];
   }
-  .hoverBox{
+  .hoverBox {
     @apply cursor-pointer transition-all duration-300 hover:translate-y-[-5px];
   }
-  .hoverIcon{
+  .hoverIcon {
     @apply transition-all duration-500 hover:translate-y-[-10px] hover:rotate-[360deg];
   }
 }
@@ -20,7 +20,8 @@ html,
 body {
   background-color: #f5f2fb;
   scroll-behavior: smooth;
-  margin: 0;padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
   --sb-track-color: #e0e0e0;
